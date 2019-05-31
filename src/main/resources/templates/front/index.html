@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>MYZONE</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <script src="../../js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/topnav.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<section id="Page_Content" class="content_section " style="padding-top: 25px">
+    <div class="container">
+        <div class="row content_bg">
+            <div class="col-xs-12 col-lg-7 content_leftboder">
+                <!--Content-->
+                <div class="content">
+                    <!--nav-->
+                    <div class="content_topnav">
+                        <hr>
+                        <a href="news_all.html" target="_blank"><h3>新闻</h3></a>
+                        <!--<a style="margin-top:-28px" class="pull-right" href="news_all.html" target="_blank">更多>></a>-->
+                    </div>
+                    <!--End of nav-->
+                    <!--news-->
+                    <div class="news_box" th:each="news,newsState:${news}">
+                        <div class="row" style="display:table-row">
+                            <div class="col-xs-3 news_pic" style="padding:0 0 0 8px;display:table-cell">
+                                <a th:href="'news_detail.html#'+${news.newsId}" target="_blank"><img
+                                        th:src="@{${news.newsPic}}" alt=""></a>
+                            </div>
+                            <div class="col-xs-9" style="display:table-cell">
+                                <div class="content_news">
+                                    <div class="content_title">
+                                        <a th:href="'news_detail.html#'+${news.newsId}" th:text="${news.newsTitle}"
+                                           target="_blank"></a>
+                                    </div>
+                                    <div class="news_summary textindent">
+                                        <a th:href="'news_detail.html#'+${news.newsId}"
+                                           th:text="${#strings.abbreviate(news.newsSummary,50)}" target="_blank">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End of Content section-->
+<!--End of Link section-->
+
+<!--Footer section-->
+<!--End of Footer section-->
+
+<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

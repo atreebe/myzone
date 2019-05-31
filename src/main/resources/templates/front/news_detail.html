@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>MYZone</title>
+    <link rel="icon" href="img/viswust.titile_logo.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+
+
+<!--Content section-->
+<section id="Page_Content" class="content_section sections">
+    <div class="container content content_bg">
+        <!--nav-->
+        <div class="content_topnav">
+            <hr>
+            <a href="news_all.html"><h3>新闻</h3></a>
+        </div>
+        <!--End of nav-->
+        <!--news-->
+        <div class="row" >
+            <div class="col-xs-12">
+                <div class="detail_box" th:id="${news.newsId}" th:each="news,newsState:${news}" style="display:none">
+                    <div class="detail_title">
+                        <h1  th:utext="${news.newsTitle}"></h1>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4"><p th:text="'时间: '+${#dates.format(news.newsTime,'yyyy年MM月dd日')}"></p></div>
+                        </div>
+                    </div>
+                    <div class="detail_content" th:utext="${news.newsContent}">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/topnav.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/news_meeting_detail.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
