@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<link rel="stylesheet" href="../../css/adminstyle.css"/>
+<link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+<body>
+
+<!--<section id="headsection" class="sections head_section">-->
+<!--<div th:replace="@{/common}::div"></div>-->
+<!--</section>-->
+<!--End of head section-->
+
+<!--body section-->
+<div>
+    <div class="container-fluid" align="center" style="margin-top: 100px">
+        <h2 align="center" th:text="${user==null}?'请填写相关信息':'修改用户信息'"></h2>
+        <form align="center" id="userform" th:action="@{/userregist}" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="_method" value="put" th:if="${user!=null}"/>
+            <input type="hidden" name="userId" th:if="${user!=null}" th:value="${user.userId}"/>
+            <table id="userdate" class="table table-hover" align="center" style="width: 500px;">
+                <tbody>
+                <tr>
+                    <td>用户名称</td>
+                    <td><input type="text" style="width: 100%" name="userName"
+                               th:value="${user!=null}?${user.userName}"></td>
+                </tr>
+                <tr>
+                    <td>用户密码</td>
+                    <td><input type="password" style="width: 100%" name="userPassword" id="userpassword"></td>
+                </tr>
+                <tr>
+                    <td>确认密码</td>
+                    <td><input type="password" style="width: 100%" name="confirmuserPassword" id="confirmuserpassword">
+                    </td>
+                </tr>
+                <tr>
+                    <td>上传头像</td>
+                    <td>
+                        <input type="file" multiple name="picUp" style="width: 100%">
+                    </td>
+                </tr>
+                <tr >
+                    <td>
+                        <button type="reset" class="btn btn-primary">重置</button>
+                    </td>
+                    <td>
+                        <button type="submit" class="btn btn-primary" onclick="return confirmpassword()">注册</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    function confirmpassword() {
+        var userpassword = document.getElementById("userpassword");
+        var confirmuserpassword = document.getElementById("confirmuserpassword");
+        // console.log(userpassword.value);
+        // console.log(confirmuserpassword.value);
+        if (userpassword.value != confirmuserpassword.value) {
+            alert('两次输入密码不一致');
+            return false;
+        } else
+            return true;
+    }
+</script>
+</body>
+</html>

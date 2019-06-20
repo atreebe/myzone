@@ -1,34 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8" />
-    <title>springboot登录</title>
+    <title>登录MyZone</title>
     <style type="text/css">
         ul li{
             list-style: none;
         }
     </style>
 </head>
-<body>
-<div >
-    <form name="form" accept-charset="utf-8"  action="/dologin"  method="post">
-        <ul >
-            <li>
-                <label  class="input-tips2">用户名：</label>
-                <div class="inputOuter2">
-                    <input type="text" id="username" name="username" maxlength="16" />
-                </div>
-            </li>
-            <li>
-                <label class="input-tips2">密码：</label>
-                <div >
-                    <input type="password" id="password"  name="password" maxlength="16"/>
-                </div>
-            </li>
-            <li>
-                <div >
-                    <input type="submit" value="登录"/>
-                </div>
-            </li>
-        </ul>
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="../../css/adminstyle.css"/>
+
+<body   style="background-repeat:no-repeat;background-size:100% 100%;
+background-attachment: fixed;">
+<div class="container-fluid" align="center" style="margin-top: 200px">
+    <form name="form" accept-charset="utf-8"  action="/dologin" style="align-content: center">
+        <table id="logindata" class="table table-hover" align="center" style="width: 400px;">
+            <tbody>
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" id="username" name="username" style="width: 100%" maxlength="16" /></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" id="password" style="width: 100%" name="password" maxlength="16"/></td>
+            </tr>
+            <tr style="margin-left: 100px">
+                <td><button type="reset" class="btn btn-primary" >重置
+                </button></td>
+                <td>
+                    <button type="submit" class="btn btn-primary">登录
+                    </button></td>
+            </tr>
+            <tr style="margin-left: 150px">
+                <td>
+                    <a th:href="@{/regist}"><li>没有账号,点此注册</li></a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </form>
 </div>
 </body>
+</html>

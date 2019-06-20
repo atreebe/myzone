@@ -24,7 +24,6 @@ a:focus {
 		max-width: 1170px
 	}
 }
-
 img{
 	max-width: 100%;
 }
@@ -33,7 +32,6 @@ a{
 	-o-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 }
-
 .textindent{
 	text-indent:2em;
 }
@@ -283,7 +281,7 @@ a{
 }
 .news_pic img{
 	margin-top:-0px;
-	width:145px;
+	width:90px
 }
 .news_summary{
 	padding-top: 10px;

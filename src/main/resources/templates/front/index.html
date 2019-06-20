@@ -3,51 +3,76 @@
 <head>
     <meta charset="utf-8"/>
     <title>MYZONE</title>
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
-    <script src="../../js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../../js/topnav.js" type="text/javascript" charset="utf-8"></script>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/style.css" rel="stylesheet" type="text/css"/>
+    <script charset="utf-8" src="../../js/jquery-1.12.4.js" type="text/javascript"></script>
+    <script charset="utf-8" src="../../js/bootstrap.min.js" type="text/javascript"></script>
+    <script charset="utf-8" src="../../js/topnav.js" type="text/javascript"></script>
 </head>
-<body>
+<body background="file/image/login.png" style="background-repeat:no-repeat;background-size:100% 100%;
+background-attachment: fixed;">
 
-<section id="Page_Content" class="content_section " style="padding-top: 25px">
+<section class="wheelplanting_section" id="Page_WheelPlanting">
+    <div class="container" style="padding: 0;">
+    </div>
+</section>
+
+<section class="content_section " id="Page_Content" style="padding-top: 25px">
     <div class="container">
-        <div class="row content_bg">
-            <div class="col-xs-12 col-lg-7 content_leftboder">
-                <!--Content-->
-                <div class="content">
-                    <!--nav-->
-                    <div class="content_topnav">
-                        <hr>
-                        <a href="news_all.html" target="_blank"><h3>新闻</h3></a>
-                        <!--<a style="margin-top:-28px" class="pull-right" href="news_all.html" target="_blank">更多>></a>-->
+        <!--<div class="row content_bg">-->
+        <div class="col-xs-20 col-lg-14 content_leftboder">
+            <!--Content-->
+            <div class="content">
+                <!--nav-->
+                <div class="content_topnav">
+                    <hr>
+                    <a href="news_all.html" target="_blank"><h3>我的空间</h3></a>
+                    <!--<a style="margin-top:-28px" class="pull-right" href="news_all.html" target="_blank">更多>></a>-->
+                </div>
+                <!--End of nav-->
+                <!--news-->
+                <div class="news_box" th:each="news,newsState:${news}">
+                    <div class="row" style="display:table-row">
+                        <div class="col-xs-3 news_pic" style="padding:0 0 0 8px;display:table-cell">
+                            <img alt="" th:src="@{${news.newsPic}}"></a>
+                        </div>
                     </div>
-                    <!--End of nav-->
-                    <!--news-->
-                    <div class="news_box" th:each="news,newsState:${news}">
-                        <div class="row" style="display:table-row">
-                            <div class="col-xs-3 news_pic" style="padding:0 0 0 8px;display:table-cell">
-                                <a th:href="'news_detail.html#'+${news.newsId}" target="_blank"><img
-                                        th:src="@{${news.newsPic}}" alt=""></a>
-                            </div>
-                            <div class="col-xs-9" style="display:table-cell">
-                                <div class="content_news">
-                                    <div class="content_title">
-                                        <a th:href="'news_detail.html#'+${news.newsId}" th:text="${news.newsTitle}"
-                                           target="_blank"></a>
-                                    </div>
-                                    <div class="news_summary textindent">
-                                        <a th:href="'news_detail.html#'+${news.newsId}"
-                                           th:text="${#strings.abbreviate(news.newsSummary,50)}" target="_blank">
-                                        </a>
-                                    </div>
+                    <div class="row" style="display:table-row">
+                        <div class="col-xs-9" style="display:table-cell">
+                            <div class="content_news">
+                                <div class="content_title">
+                                    <a target="_blank"
+                                       th:text="${news.newsTitle}"></a>
+                                </div>
+                                <div class="news_summary textindent">
+                                    <a
+                                            target="_blank" th:text="${#strings.abbreviate(news.newsSummary,50)}">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div th:each="c,commentstate:${comment}" th:id="${c.commentId}"
+                         th:if="${#strings.contains(c.commentNewsId,news.newsId)}">
+                        <div><p th:text="${#dates.format(c.commentTime,'MM月dd日 hh:dd')}+': '+${c.commentContent}">
+                            暂无评论</p></div>
+                    </div>
+                    <div>
+                        <form align="left" enctype="multipart/form-data" id="addconnent" method="post"
+                              th:action="@{/addcomment}">
+                            <input name="commentNewsId" th:value="${news.newsId}" type="hidden">
+                            <table style="width: 800px;">
+                                <tr>
+                                    <td><input name="commentContent" placeholder="请输入评论" style="width: 95%" type="text">
+                                    </td>
+                                    <td><input class="btn btn-primary" type="submit" value="发表"/></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
                 </div>
+                <!--</div>-->
             </div>
         </div>
     </div>
@@ -58,7 +83,7 @@
 <!--Footer section-->
 <!--End of Footer section-->
 
-<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+<script charset="utf-8" src="js/footer.js" type="text/javascript"></script>
+<script charset="utf-8" src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
