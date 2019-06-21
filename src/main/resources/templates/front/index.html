@@ -2,26 +2,34 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8"/>
-    <title>MYZONE</title>
-    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="../../css/bootstrap.css" rel="stylesheet" type="text/css"/>
-    <link href="../../css/style.css" rel="stylesheet" type="text/css"/>
-    <script charset="utf-8" src="../../js/jquery-1.12.4.js" type="text/javascript"></script>
-    <script charset="utf-8" src="../../js/bootstrap.min.js" type="text/javascript"></script>
-    <script charset="utf-8" src="../../js/topnav.js" type="text/javascript"></script>
+    <title>MyZone</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script charset="utf-8" src="js/jquery-1.12.4.js" type="text/javascript"></script>
+    <script charset="utf-8" src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script charset="utf-8" src="js/topnav.js" type="text/javascript"></script>
 </head>
-<body background="file/image/login.png" style="background-repeat:no-repeat;background-size:100% 100%;
-background-attachment: fixed;">
-
+<!--<body background="file/image/main.jpg" style="background-repeat:no-repeat;background-size:100% 100%;-->
+<!--background-attachment: fixed;">-->
+<body>
 <section class="wheelplanting_section" id="Page_WheelPlanting">
-    <div class="container" style="padding: 0;">
+    <div class="container" style="padding: 0;margin-top: 20px;">
+        <div class="row">
+            <div>
+                <img alt="logo" th:src="@{${nowuser.userPic}}" style="height:118px">
+            </div>
+            <div class="col-xs-8 content_title">
+                <a th:utext="${nowuser.userNickname}"></a>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="content_section " id="Page_Content" style="padding-top: 25px">
+<section class="content_section " id="Page_Content" style="padding-top: 25px;">
     <div class="container">
         <!--<div class="row content_bg">-->
-        <div class="col-xs-20 col-lg-14 content_leftboder">
+        <div class="col-xs-20 col-lg-8 content_leftboder">
             <!--Content-->
             <div class="content">
                 <!--nav-->
@@ -32,10 +40,25 @@ background-attachment: fixed;">
                 </div>
                 <!--End of nav-->
                 <!--news-->
+                <div>
+                    <a th:href="@{/addnews}">发个动态</a>
+                    <a th:href="@{/admin/news}">后台数据管理</a>
+                </div>
                 <div class="news_box" th:each="news,newsState:${news}">
-                    <div class="row" style="display:table-row">
+                    <div class="row" style="display:table-row" th:each="u,userstate:${user}" th:id="${u.userId}"
+                         th:if="${#strings.contains(u.userId,news.newsAuthorId)}">
                         <div class="col-xs-3 news_pic" style="padding:0 0 0 8px;display:table-cell">
-                            <img alt="" th:src="@{${news.newsPic}}"></a>
+                            <img alt="" th:src="@{${u.userPic}}"></a>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="content_news">
+                                <div class="content_title">
+                                    <a th:utext="${u.userNickname}"></a>
+                                </div>
+                                <div class="news_summary">
+                                    <a target="_blank" th:utext="${#dates.format(news.newsTime,'MM月dd日 HH:mm')}"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row" style="display:table-row">
@@ -46,8 +69,8 @@ background-attachment: fixed;">
                                        th:text="${news.newsTitle}"></a>
                                 </div>
                                 <div class="news_summary textindent">
-                                    <a
-                                            target="_blank" th:text="${#strings.abbreviate(news.newsSummary,50)}">
+                                    <!--<a target="_blank" th:text="${#strings.abbreviate(news.newsSummary,50)}">-->
+                                    <a target="_blank" th:utext="${news.newsContent}">
                                     </a>
                                 </div>
                             </div>
@@ -55,16 +78,30 @@ background-attachment: fixed;">
                     </div>
                     <div th:each="c,commentstate:${comment}" th:id="${c.commentId}"
                          th:if="${#strings.contains(c.commentNewsId,news.newsId)}">
-                        <div><p th:text="${#dates.format(c.commentTime,'MM月dd日 hh:dd')}+': '+${c.commentContent}">
+                        <div><p th:text="${c.commentAuthor}+' '+${#dates.format(c.commentTime,'MM月dd日 HH:mm')}+': '+${c.commentContent}">
                             暂无评论</p></div>
+                    </div>
+                    <div>
+                        <form id="givelike" method="post" th:action="@{/givelike}">
+                            <input name="newsId" th:value="${news.newsId}" type="hidden">
+                            <table align="center" style="width: 800px;">
+                                <tr align="left">
+                                    <td><input class="btn btn-primary" type="submit" value="点赞"/>
+                                        <p th:text="${news.newsGood}"></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
                     </div>
                     <div>
                         <form align="left" enctype="multipart/form-data" id="addconnent" method="post"
                               th:action="@{/addcomment}">
                             <input name="commentNewsId" th:value="${news.newsId}" type="hidden">
+                            <input name="commentAuthor" th:value="${nowuser.userNickname}" type="hidden">
                             <table style="width: 800px;">
                                 <tr>
-                                    <td><input name="commentContent" placeholder="请输入评论" style="width: 95%" type="text">
+                                    <td><input id="commentContent" name="commentContent" placeholder="请输入评论"
+                                               style="width: 95%" type="text">
                                     </td>
                                     <td><input class="btn btn-primary" type="submit" value="发表"/></td>
                                 </tr>
@@ -85,5 +122,16 @@ background-attachment: fixed;">
 
 <script charset="utf-8" src="js/footer.js" type="text/javascript"></script>
 <script charset="utf-8" src="js/main.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function confirmnull() {
+        var commentContent = document.getElementById("commentContent");
+        console.log(commentContent.value);
+        if (commentContent.value.toString().length == 0) {
+            alert('输入评论为空');
+            return false;
+        } else
+            return true;
+    }
+</script>
 </body>
 </html>

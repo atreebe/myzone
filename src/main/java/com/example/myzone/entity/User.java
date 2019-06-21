@@ -17,6 +17,8 @@ public class User {
     private String userName;//用户名
     @Column(name = "user_password",length =256)
     private String userPassword;//密码
+    @Column(name = "user_nicakname",length =256)
+    private String userNickname;//密码
     @Column(name = "user_pic",length = 256)
     private String userPic;
     public int getUserId() {
@@ -46,6 +48,14 @@ public class User {
 
     public void setUserPic(String userPic) {
         this.userPic = userPic;
+    }
+
+    public String getUserNickname() {
+        return userNickname;
+    }
+
+    public void setUserNickname(String userNickname) {
+        this.userNickname = userNickname;
     }
 }
 

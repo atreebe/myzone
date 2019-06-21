@@ -13,8 +13,8 @@ public class AdminLoginAdapter extends WebMvcConfigurerAdapter {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(adminLoginInterceptor).addPathPatterns("/**.html");
-        //.excludePathPatterns("/login/**")
+        registry.addInterceptor(adminLoginInterceptor).addPathPatterns("/**.html","/admin/**","/add**");
+        //registry.excludePathPatterns("/login/**");
         super.addInterceptors(registry);
     }
 }

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>MyZone</title>
+    <!--TITLE ICON-->
+
+    <!--CSS STYLE-->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/adminstyle.css"/>
+
+    <!--JAVASCRIPT-->
+    <script src="../../js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/admintopnav.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+
+<!--Home Section-->
+<section id="home" class="home"></section>
+<!--End of Home section-->
+
+<section class="content_bg">
+    <div class="container-fluid">
+        <div class="content_bg_box row">
+            <div class="col-sm-2 col-md-2 col-lg-1 content_bg_boxleft">
+                <nav>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a th:href="@{/admin/comment}">
+                            <div class="trangle_bule"></div>
+                            评论管理
+                        </a></li>
+                        <li role="presentation"><a th:href="@{/admin/news}">
+                            <div class="trangle_bule"></div>
+                            动态管理
+                        </a></li>
+                        <li role="presentation"><a th:href="@{/admin/user}">
+                            <div class="trangle_bule"></div>
+                            用户管理
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-11 content_bg_box_right">
+                <div class="container-fluid content">
+                    <h3 >新闻列表</h3>
+                    <hr/>
+                    <div>
+                        <!--<form action="findnews" id="newsForm" method="post" onSubmit="return checkForm();">-->
+                        <!--<fieldset>-->
+                        <!--<label>通知题目：</label><input name="newsTitle" type="text"/>-->
+                        <!--<input class="btn" type="submit" value="查询" />-->
+                        <!--</fieldset>-->
+                        <!--</form>-->
+                        <form form style="margin-top:-5px;margin-bottom:15px;display: inline-block" id="findnews"  th:href="@{/admin/findnews}" method="post">
+                            <input type="hidden" name="_method" value="patch"/>
+                            <input name="newsContent" type="text" placeholder="搜索动态内容"
+                                   th:value="${flag==1}?${newscontent}"/>
+                            <input type="submit" class="btn btn-primary"
+                                   value="搜索"/>
+                        </form>
+                        <!--<a class="btn btn-primary" href="/admin/addnews" th:href="@{/admin/addnews}">添加</a>-->
+                    </div>
+
+                    <table id="dataTable">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>题目</th>
+                            <th>时间</th>
+                            <th>发布者</th>
+                            <th>获赞</th>
+                            <th>被评论</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="c,index:${news}">
+                            <td th:text="${c.newsId}"></td>
+                            <td th:text="${c.newsTitle}"></td>
+                            <td th:text="${c.newsTime}"></td>
+                            <td th:text="${c.newsAuthorId}"></td>
+                            <td th:text="${c.newsGood}"></td>
+                            <td th:text="${c.newsComment}"></td>
+
+                            <td>
+                                <a class="btn btn-sm btn-info" th:href="@{/admin/addnews/}+${c.newsId}">修改</a>
+                                <form name="deleteForm" th:action="@{/admin/news/}+${c.newsId}" method="post">
+                                    <input type="hidden" name="_method" value="delete"/>
+                                    <input type="submit" value="删除" onclick="return definedelete()" class="btn btn-sm" />
+                                </form>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer section-->
+<section id="footer" class="footer sections"></section>
+<!--End of Footer section-->
+
+<script type="text/javascript">
+    function checkForm(){
+        var form = document.getElementById('newsForm');
+        if(form.orgName.value.trim()==''){
+            alert('相关单位名称必须填写！');
+            form.orgName.focus();
+            return false;
+        }
+    }
+    function definedelete() {
+        like=window.confirm("确定删除此数据?");
+        if(like==true)
+        {
+            return true;
+        }
+        else
+            return false
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE HTML>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+    <!--<title>新闻信息</title>-->
+    <!--<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>-->
+    <!--<link href="../../css/base.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="../../css/bootstrap.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="../../css/adminstyle.css" rel="stylesheet" type="text/css"/>-->
+<!--</head>-->
+<!--<body>-->
+<!--<section>-->
+    <!--<div th:replace="@{/common}::div"></div>-->
+<!--</section>-->
+<!--<section class="body_section" id="bodysection">-->
+    <!--<div class="container-fluid" id="nav">-->
+        <!--<div class="row">-->
+            <!--<div class="col-md-10 col-xs-9 content" style="margin-left: -5%">-->
+                <!--<div class="container-fluid">-->
+                    <!--<h2 align="center">新闻列表</h2>-->
+                    <!--<div>-->
+                        <!--&lt;!&ndash;<form action="findnews" id="newsForm" method="post" onSubmit="return checkForm();">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<fieldset>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<label>通知题目：</label><input name="newsTitle" type="text"/>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<input class="btn" type="submit" value="查询" />&ndash;&gt;-->
+                        <!--&lt;!&ndash;</fieldset>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</form>&ndash;&gt;-->
+                        <!--<h2 align="center"><a class="btn btn-success" href="/admin/addnews" th:href="@{/admin/addnews}">添加</a>-->
+                        <!--</h2>-->
+                    <!--</div>-->
+                    <!--<hr/>-->
+                    <!--<table class="gridtable" id="dataTable">-->
+                        <!--<thead>-->
+                        <!--<tr>-->
+                            <!--<th>序号</th>-->
+                            <!--<th>题目</th>-->
+                            <!--<th>时间</th>-->
+                            <!--<th>操作</th>-->
+                        <!--</tr>-->
+                        <!--</thead>-->
+                        <!--<tbody>-->
+                        <!--<tr th:each="c,index:${news}">-->
+                            <!--<td th:text="${c.newsId}"></td>-->
+                            <!--<td th:text="${c.newsTitle}"></td>-->
+                            <!--<td th:text="${c.newsTime}"></td>-->
+                            <!--<td>-->
+                                <!--<a class="btn btn-sm btn-success" th:href="@{/admin/addnews/}+${c.newsId}">修改</a>-->
+                                <!--<form name="deleteForm" th:action="@{/admin/news/}+${c.newsId}" method="post">-->
+                                    <!--<input type="hidden" name="_method" value="delete"/>-->
+                                    <!--<input type="submit" value="删除" class="btn" onclick="return definedelete();"/>-->
+                                <!--</form>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--</tbody>-->
+                    <!--</table>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+<!--</body>-->
+<!--<script type="text/javascript">-->
+    <!--function checkForm() {-->
+        <!--var form = document.getElementById('newsForm');-->
+        <!--if (form.orgName.value.trim() == '') {-->
+            <!--alert('相关单位名称必须填写！');-->
+            <!--form.orgName.focus();-->
+            <!--return false;-->
+        <!--}-->
+    <!--}-->
+
+    <!--function definedelete() {-->
+        <!--like = window.confirm("确定删除此数据?");-->
+        <!--if (like == true) {-->
+            <!--alert('删除成功！');-->
+            <!--return true;-->
+        <!--} else-->
+            <!--return false-->
+    <!--}-->
+<!--</script>-->
+<!--</html>-->

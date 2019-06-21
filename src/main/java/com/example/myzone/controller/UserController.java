@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.ClassUtils;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
@@ -55,9 +56,9 @@ public class UserController {
         catch (Exception e) {
             throw new Exception("MD5加密出现错误，"+e.toString());
         }
-        List<User> userslist = userRepo.findByUserName(user.getUserName());
+        List<User> userslist = userRepo.findByUserNickname(user.getUserNickname());
         if(!userslist.isEmpty()){
-            resultStr = "用户名称重复";
+            resultStr = "用户昵称称重复";
             hrefStr = "/regist";
             model.addAttribute("result", resultStr);
             model.addAttribute("hre", hrefStr);
@@ -104,4 +105,61 @@ public class UserController {
         model.addAttribute("hre", hrefStr);
         return "/success";
     }
+
+    @RequestMapping(value = "/admin/user",method = RequestMethod.GET)
+    public String findAdminUser(Model model) {
+        List<User> user = userRepo.findDescUser();
+        model.addAttribute("user", user);
+        return "admin/userinfo";
+    }
+    //删除操作
+    @RequestMapping(value = "/admin/user/{id}",method = RequestMethod.DELETE)
+    public String deletenews(@PathVariable("id") Integer id, Model model){
+        String result = "用户删除成功";
+        String href = "/admin/user";
+        User user = userRepo.findByUserId(id);
+        String path = ClassUtils.getDefaultClassLoader().getResource("").getPath();
+        //提取项目文件路径
+        String srcpath = "";
+        for (int i = 0; i < path.length(); i++) { //去掉target文件目录
+            if (path.charAt(i) == '/' && path.charAt(i + 1) == 't' && path.charAt(i + 2) == 'a' && path.charAt(i + 3) == 'r' && path.charAt(i + 4) == 'g') {
+                break;
+            } else {
+                srcpath += path.charAt(i);
+            }
+        }
+        //文件存入位置
+        srcpath = srcpath + "/src/main/resources/static/" + user.getUserPic();
+//        if(user.getUserPic().length()==0)
+//        {
+//            result = "无用户图片";
+//        }
+//        else
+        {
+            File file = new File(srcpath);
+            if (file.exists()) {
+                if (file.delete()) {
+                    result=  "图片删除成功";
+                } else {
+                    result =  "图片删除失败";
+                }
+            } else {
+                result = "图片不存在！";
+            }
+        }
+        try{
+            userRepo.delete(user);
+            model.addAttribute("result",result);
+            model.addAttribute("hre",href);
+            return "/success";
+        }catch(Exception e){
+            e.printStackTrace();
+            result = "用户删除失败！";
+            href = "/admin/news";
+            model.addAttribute("result",result);
+            model.addAttribute("hre",href);
+            return "/success";
+        }
+    }
+
 }

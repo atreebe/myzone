@@ -16,7 +16,7 @@ public class News {
     @Column(name = "news_id",length = 8)
     private int newsId;
     @Column(name = "news_authorid",length = 8)
-    private int newsauthorid;
+    private int newsAuthorId;
     @Column(name = "news_title",length = 256)
     private String newsTitle;
     @Column(name = "news_content",columnDefinition="text")
@@ -26,10 +26,12 @@ public class News {
     @Column(name = "news_pic",length = 256)
     private String newsPic;
     @Column(name = "news_good",length = 8)
-    private int newsgood;
+    private int newsGood;
+    @Column(name = "news_comment",length = 8)
+    private int newsComment;
     @Column(name = "news_time")
     @CreatedDate
-    @JsonFormat(pattern="yyyy-mm-dd hh:mm:ss")
+    @JsonFormat(pattern="yyyy-MM-dd hh:mm:ss")
     private Date newsTime;
 
     public int getNewsId() {
@@ -40,12 +42,12 @@ public class News {
         this.newsId = newsId;
     }
 
-    public int getNewsauthorid() {
-        return newsauthorid;
+    public int getNewsAuthorId() {
+        return newsAuthorId;
     }
 
-    public void setNewsauthorid(int newsauthorid) {
-        this.newsauthorid = newsauthorid;
+    public void setNewsAuthorId(int newsAuthorId) {
+        this.newsAuthorId = newsAuthorId;
     }
 
     public String getNewsTitle() {
@@ -79,11 +81,13 @@ public class News {
     public void setNewsPic(String newsPic) {
         this.newsPic = newsPic;
     }
-    public int getNewsgood(){
-        return newsgood;
+
+    public int getNewsGood() {
+        return newsGood;
     }
-    public void setNewsgood(int newsgood) {
-        this.newsgood = newsgood;
+
+    public void setNewsGood(int newsGood) {
+        this.newsGood = newsGood;
     }
 
     public Date getNewsTime() {
@@ -92,5 +96,13 @@ public class News {
 
     public void setNewsTime(Date newsTime) {
         this.newsTime = newsTime;
+    }
+
+    public int getNewsComment() {
+        return newsComment;
+    }
+
+    public void setNewsComment(int newsComment) {
+        this.newsComment = newsComment;
     }
 }

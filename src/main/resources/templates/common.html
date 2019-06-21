@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>共用部件</title>
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/adminstyle.css"/>
+</head>
+<body>
+<section id="headsection" class="sections head_section">
+    <div class="container-fluid" th:fragment="copy">
+        <div class="row" >
+            <div class="col-xs-12 col-sm-6 col-lg-3 head_title">
+                <h2 align="left">MyZone后台管理系统</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3 col-xs-offset-3 head_title" style="text-align: right;">
+                <!--<button type="button" style="margin: 20px 50px; font-size: 20px;" th:text="${username}"></button>-->
+                <!--<a href="/adminLogin">-->
+                <button type="button" style="margin: 20px 50px">退出</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2 col-xs-5" style="padding-left: 0;" th:fragment="copy1">
+        <div class="col-xs-8 nav"style="padding: 0 10px ;" >
+            <ul>
+                <a th:href="@{/admin/comment}"><li>评论管理</li></a>
+                <a th:href="@{/admin/news}"><li>动态管理</li></a>
+                <a th:href="@{/admin/user}"><li>用户管理</li></a>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+</html>

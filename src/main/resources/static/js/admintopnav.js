@@ -6,14 +6,14 @@ $(document).ready(function(){
 	/*Logo*/
 	htmlStr += '<div class="col-xs-10 col-sm-8 col-md-4">'
 	htmlStr += '<a href="#">';
-	htmlStr += '<img src="../img/Logo_top.png" alt="logo">';
+	// htmlStr += '<img src="../img/Logo_top.png" alt="logo">';
 	htmlStr += '</a>';
 	htmlStr += '</div>';//End of col
 
 	/*Title*/
 	htmlStr += '<div class="col-xs-10 col-sm-8 col-md-5" style="padding:0">';
-	htmlStr += '<h1 style="float:left;margin-left:-9999px">Swustvis后台管理系统</h1>';
-	htmlStr += '<h2 style="text-align: left">Swustvis后台管理系统</h2>';
+	htmlStr += '<h1 style="float:left;margin-left:-9999px">MyZone后台管理系统</h1>';
+	htmlStr += '<h2 style="text-align: left">MyZone后台管理系统</h2>';
 	htmlStr += '</div>';//End of col
 
 	/*Button*/
@@ -37,7 +37,7 @@ $(document).ready(function(){
 	/*Logo*/
 	htmlStr += '<div class="col-xs-5 col-sm-4 col-md-2">'
 	htmlStr += '<a href="#">';
-	htmlStr += '<img src="../img/Logo_top.png" alt="logo">';
+	// htmlStr += '<img src="../img/Logo_top.png" alt="logo">';
 	htmlStr += '</a>';
 	htmlStr += '</div>';//End of col
 

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>MyZone</title>
+    <!--TITLE ICON-->
+    <!--<link rel="icon" href="../../img/viswust.titile_logo.ico" type="image/x-icon"/>-->
+
+    <!--CSS STYLE-->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/adminstyle.css"/>
+
+    <!--JAVASCRIPT-->
+    <script src="../../js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/admintopnav.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+
+<!--Home Section-->
+<section id="home" class="home"></section>
+<!--End of Home section-->
+
+<section class="content_bg">
+    <div class="container-fluid">
+        <div class="content_bg_box row">
+            <div class="col-sm-2 col-md-2 col-lg-1 content_bg_boxleft">
+                <nav>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a th:href="@{/admin/comment}">
+                            <div class="trangle_bule"></div>
+                            评论管理
+                        </a></li>
+                        <li role="presentation"><a th:href="@{/admin/news}">
+                            <div class="trangle_bule"></div>
+                            动态管理
+                        </a></li>
+                        <li role="presentation"><a th:href="@{/admin/user}">
+                            <div class="trangle_bule"></div>
+                            用户管理
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-11 content_bg_box_right">
+                <div class="container-fluid content">
+                    <h3>用户列表</h3>
+                    <hr/>
+                    <!--<form id="userForm" action="adduser" method="post" onSubmit="return checkForm();">-->
+                    <!--<fieldset>-->
+                    <!--<label>分组：</label><input type="text" name="userCategory"/>-->
+                    <!--<label>用户名：</label><input type="text" name="userName"/>-->
+                    <!--<label>密码：</label><input type="password" name="userPassword"/>-->
+                    <!--<label>确认密码：</label><input type="password" name="userPassword2"/>-->
+                    <!--<input type="submit" value="添加" class="btn"/>-->
+                    <!--</fieldset>-->
+                    <!--</form>-->
+                    <!--<h2 ><a class="btn btn-primary" href="/admin/adduser" th:href="@{/admin/adduser}">添加</a></h2>-->
+                    <table id="dataTable">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>用户名</th>
+                            <th>用户昵称</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="c, index:${user}">
+                            <td th:text="${c.userId}"></td>
+                            <td th:text="${c.userName}"></td>
+                            <td th:text="${c.userNickname}"></td>
+                            <td>
+                                <a class="btn btn-sm btn-info" th:href="@{/admin/adduser/}+${c.userId}">修改</a>
+                                <form name="deleteForm" th:action="@{/admin/user/}+${c.userId}" method="post">
+                                    <input type="hidden" name="_method" value="delete"/>
+                                    <input type="submit" value="删除" class="btn btn-sm " onclick="return definedelete()"/></form>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer section-->
+<section id="footer" class="footer sections"></section>
+<!--End of Footer section-->
+
+<script type="text/javascript">
+    function checkForm() {
+        var form = document.getElementById('userForm');
+        if (form.userName.value.trim() == '') {
+            alert('用户名必须填写！');
+            form.userName.focus();
+            return false;
+        }
+        if (form.userPassword.value.trim() == '') {
+            alert('密码必须填写！');
+            form.userPassword.focus();
+            return false;
+        }
+        if (form.userPassword.value.trim() != form.userPassword2.value.trim()) {
+            alert('前后输入的密码不一致！');
+            form.userPassword.focus();
+            return false;
+        }
+    }
+    function definedelete() {
+        like = window.confirm("确定删除此数据?");
+        if (like == true) {
+            return true;
+        } else
+            return false
+    }
+</script>
+</body>
+</html>
+
+
+
+
+<!--<!DOCTYPE HTML>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+    <!--<title>用户信息</title>-->
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="../css/base.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css"/>-->
+    <!--<link rel="stylesheet" type="text/css" href="../../css/adminstyle.css"/>-->
+<!--</head>-->
+<!--<body>-->
+<!--<section id="headsection" class="sections head_section">-->
+    <!--<div th:replace="@{/common}::div"></div>-->
+<!--</section>-->
+<!--&lt;!&ndash;End of head section&ndash;&gt;-->
+
+<!--&lt;!&ndash;body section&ndash;&gt;-->
+<!--<section id="bodysection" class="body_section">-->
+    <!--<div id="nav" class="container-fluid">-->
+        <!--<div class="row">-->
+            <!--<div class="col-md-10 col-xs-9 content" style="margin-left: -5%">-->
+                <!--<div class="container-fluid">-->
+                    <!--<h2 align="center">用户列表</h2>-->
+                    <!--&lt;!&ndash;<form id="userForm" action="adduser" method="post" onSubmit="return checkForm();">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<fieldset>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<label>分组：</label><input type="text" name="userCategory"/>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<label>用户名：</label><input type="text" name="userName"/>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<label>密码：</label><input type="password" name="userPassword"/>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<label>确认密码：</label><input type="password" name="userPassword2"/>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<input type="submit" value="添加" class="btn"/>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</fieldset>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</form>&ndash;&gt;-->
+                    <!--<h2 align="center"><a class="btn btn-success" href="/admin/adduser" th:href="@{/admin/adduser}">添加</a></h2>-->
+                    <!--<hr/>-->
+                    <!--<table id="dataTable" class="gridtable">-->
+                        <!--<thead>-->
+                        <!--<tr>-->
+                            <!--<th>序号</th>-->
+                            <!--<th>用户分组</th>-->
+                            <!--<th>用户名</th>-->
+                            <!--<th>操作</th>-->
+                        <!--</tr>-->
+                        <!--</thead>-->
+                        <!--<tbody>-->
+                        <!--<tr th:each="c, index:${users}">-->
+                            <!--<td th:text="${c.userId}"></td>-->
+                            <!--<td th:text="${c.userCategory}"></td>-->
+                            <!--<td th:text="${c.userName}"></td>-->
+                            <!--<td>-->
+                                <!--<a class="btn btn-sm btn-success" th:href="@{/admin/adduser/}+${c.userId}">修改</a>-->
+                                <!--<form name="deleteForm" action="deleteuser">-->
+                                    <!--<input type="hidden" name="userId" th:value="${c.userId}"/>-->
+                                    <!--<input type="submit" value="删除" class="btn" onclick="return definedelete()"/></form>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--</tbody>-->
+                    <!--</table>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+<!--</body>-->
+<!--<script type="text/javascript">-->
+    <!--function checkForm() {-->
+        <!--var form = document.getElementById('userForm');-->
+        <!--if (form.userName.value.trim() == '') {-->
+            <!--alert('用户名必须填写！');-->
+            <!--form.userName.focus();-->
+            <!--return false;-->
+        <!--}-->
+        <!--if (form.userPassword.value.trim() == '') {-->
+            <!--alert('密码必须填写！');-->
+            <!--form.userPassword.focus();-->
+            <!--return false;-->
+        <!--}-->
+        <!--if (form.userPassword.value.trim() != form.userPassword2.value.trim()) {-->
+            <!--alert('前后输入的密码不一致！');-->
+            <!--form.userPassword.focus();-->
+            <!--return false;-->
+        <!--}-->
+    <!--}-->
+
+    <!--function definedelete() {-->
+        <!--like = window.confirm("确定删除此数据?");-->
+        <!--if (like == true) {-->
+            <!--alert('删除成功！');-->
+            <!--return true;-->
+        <!--} else-->
+            <!--return false-->
+    <!--}-->
+<!--</script>-->
+<!--</html>-->

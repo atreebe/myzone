@@ -1,7 +1,9 @@
 package com.example.myzone.controller;
 
+import com.example.myzone.entity.Comment;
 import com.example.myzone.entity.News;
 import com.example.myzone.entity.User;
+import com.example.myzone.repo.CommentRepo;
 import com.example.myzone.repo.NewsRepo;
 import com.example.myzone.repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +25,8 @@ public class LoginController {
     private NewsRepo newsRepo;
     @Autowired
     private UserRepo userRepo;
+    @Autowired
+    private CommentRepo commentRepo;
     @RequestMapping(value = {"/"})
     public String findindex(Model model) {
         return  "front/login";
@@ -57,17 +61,16 @@ public class LoginController {
         catch (Exception e) {
             throw new Exception("MD5加密出现错误，"+e.toString());
         }
-        List<User> user = userRepo.findAll();
+        List<User> alluser = userRepo.findAll();
         String str = "redirect:/";
-        for(int i = 0 ; i < user.size() ; i++) {
+        for(int i = 0 ; i < alluser.size() ; i++) {
 //            System.out.println("*************");
 //            System.out.println(user.get(i).getUserName() + " " + user.get(i).getUserPassword());
-            if(user.get(i).getUserName().equals(username) && user.get(i).getUserPassword().equals(password)){
+            if(alluser.get(i).getUserName().equals(username) && alluser.get(i).getUserPassword().equals(password)){
                 str="redirect:/index.html";
                 session.setAttribute("username",username);
             }
         }
-        model.addAttribute("username",username);
-        return str;
+        return  str;
     }
 }
