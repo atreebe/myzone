@@ -18,8 +18,8 @@ $(document).ready(function(){
 
 	/*Button*/
 	htmlStr += '<div class="col-xs-12 col-sm-4 col-md-3 home_button" >';
-	htmlStr += '<button class="btn btn-default btn-sm" type="button" th:text="${username}">用户</button>';
-	htmlStr += '<button class="btn btn-default btn-sm" type="button" >退出</button>';
+	htmlStr += '<button class="btn btn-default btn-sm"  th:text="${username}">用户</button>';
+	htmlStr += '<a th:href="@{/login}"><button class="btn btn-default btn-sm" type="button" th:href>退出</button></a>';
 	htmlStr += '</div>';
 
 	htmlStr += '</div>';//End of row

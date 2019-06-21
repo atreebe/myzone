@@ -47,12 +47,25 @@
                         <input type="file" multiple name="picUp" style="width: 100%">
                     </td>
                 </tr>
+                <tr style="display: none;">
+                    <td>用户图片</td>
+                    <td><input name="userPic" placeholder="无需输入图片地址"
+                               th:value="${user!=null}?${user.userPic}"></td>
+                </tr>
+                <tr>
+                    <td>用户头像</td>
+                    <td>
+                        <div class="add_img">
+                            <img alt="" th:src="${user!=null}?'../../'+${user.userPic}"/>
+                        </div>
+                    </td>
+                </tr>
                 <tr >
                     <td>
                         <button type="reset" class="btn btn-primary">重置</button>
                     </td>
                     <td>
-                        <button type="submit" class="btn btn-primary" onclick="return confirmpassword()">注册</button>
+                        <button type="submit" class="btn btn-primary" th:text="${user!=null}?'修改':'注册'" onclick="return confirmpassword()"></button>
                     </td>
                 </tr>
                 </tbody>

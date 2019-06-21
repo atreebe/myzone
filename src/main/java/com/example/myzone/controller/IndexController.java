@@ -35,6 +35,7 @@ public class IndexController {
         model.addAttribute("comment",comment);
         List<User> user = userRepo.findAll();
         model.addAttribute("user",user);
+
         User nowuser = userRepo.findByUserName(session.getAttribute("username").toString());
         model.addAttribute("nowuser",nowuser);
         return  "front/index";

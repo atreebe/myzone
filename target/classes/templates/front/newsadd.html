@@ -31,48 +31,55 @@
     <div align="center" class="container-fluid">
         <h2 align="center" th:text="${news!=null}?'修改动态信息':'添加动态信息'"></h2>
         <form align="center" enctype="multipart/form-data" id="addnews" method="post" th:action="@{/addnews}">
-            <!--<input name="_method" th:if="${news!=null}" type="hidden" value="put"/>-->
-            <!--<input name="newsId" th:if="${news!=null}" th:value="${news.newsId}" type="hidden"/>-->
+            <input name="_method" th:if="${news!=null}" type="hidden" value="put"/>
+            <input name="newsId" th:if="${news!=null}" th:value="${news.newsId}" type="hidden"/>
             <table align="center" class="table table-hover" id="newsdate" style="width: 1500px;">
                 <tbody>
-                <!--<tr>-->
-                <!--<td class="tabTd">新闻编号</td>-->
-                <!--<td><input type="number" class="shor" name="newsId" th:value="${news!=null}?${news.newsId}"> </td>-->
-                <!--</tr>-->
-                <tr>
+                    <tr style="display: none" th:if="${news!=null}">
+                        <td class="tabTd">动态点赞</td>
+                        <td><input type="number" class="shor" name="newsGood" th:value="${news!=null}?${news.newsGood}"> </td>
+                    </tr>
+                <tr style="display: none" th:if="${news!=null}">
                     <td class="tabTd">动态标题</td>
                     <td><input class="long" name="newsTitle" th:value="${news!=null}?${news.newsTitle}" type="text">
                     </td>
                 </tr>
-                <!--<tr style="display: none;">-->
-                    <!--<td class="tabTd">动态作者</td>-->
-                    <!--<td><input class="shor" name="newsAuthor" th:value="${news!=null}?${news.newsAuthor}:'admin'"-->
-                               <!--type="text">-->
-                    <!--</td>-->
-                <!--</tr>-->
-                <!--<tr>-->
-                    <!--<td class="tabTd">新闻发布时间</td>-->
-                    <!--<td><input class="shor" id="newstime" name="newsTime"-->
-                               <!--th:value="${news!=null}?${#dates.format(news.newsTime,'yyyy-MM-dd')}"-->
-                               <!--type="date"></td>-->
-                <!--</tr>-->
+                <tr style="display: none;" th:if="${news!=null}">
+                    <td class="tabTd">动态作者</td>
+                    <td><input class="shor" name="newsAuthorId" th:value="${news!=null}?${news.newsAuthorId}:'admin'"
+                               type="text">
+                    </td>
+                </tr>
+                <tr style="display: none" th:if="${news!=null}">
+                    <td class="tabTd">新闻发布时间</td>
+                    <td><input class="shor" id="newstime" name="newsTime"
+                               th:value="${news!=null}?${#dates.format(news.newsTime,'yyyy-MM-dd')}"
+                               type="date"></td>
+                </tr>
                 <tr>
                     <td class="tabTd">动态内容</td>
                     <td><textarea name="newsContent" id="summernote"></textarea>
                     <input type="hidden" id="newscontent" th:value="${news!=null}?${news.newsContent}"/></td>
                 </tr>
-                <tr>
-                    <td class="tabTd">动态摘要</td>
+                <!--<tr style="display: none" th:if="${news!=null}">-->
+                    <!--<td class="tabTd">动态摘要</td>-->
+                    <!--<td>-->
+                        <!--<textarea rows="5" cols="80"  name="newsSummary" th:value="${news!=null}?${news.newsSummary}"-->
+                                  <!--type="text"></textarea>-->
+                    <!--</td>-->
+                <!--</tr>-->
+                <tr style="display: none" th:if="${news!=null}">
+                    <td class="tabTd">动态评论</td>
                     <td>
-                        <textarea rows="5" cols="80"  name="newsSummary" th:value="${news!=null}?${news.newsSummary}"
-                                  type="text"></textarea>
+                        <input  name="newsComment" th:value="${news!=null}?${news.newsComment}"
+                                  type="number"></input>
                     </td>
                 </tr>
-                <tr style="display: none">
-                    <td class="tabTd" id="image">动态图片地址</td>
-                    <td><input name="newsImage" placeholder="无需输入图片地址"
-                               th:value="${news!=null}?${news.newsPic}"></td>
-                </tr>
+                <!--<tr style="display: none">-->
+                    <!--<td class="tabTd" id="image">动态图片地址</td>-->
+                    <!--<td><input name="newsPic" placeholder="无需输入图片地址"-->
+                               <!--th:value="${news!=null}?${news.newsPic}"></td>-->
+                <!--</tr>-->
                 </tbody>
             </table>
             <button type="reset" class="btn btn-primary" style="margin-top:20px;margin-bottom: 100px;">重置

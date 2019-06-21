@@ -7,15 +7,15 @@
     <link rel="stylesheet" type="text/css" href="../../css/adminstyle.css"/>
 </head>
 <body>
-<section id="headsection" class="sections head_section">
+<section>
     <div class="container-fluid" th:fragment="copy">
         <div class="row" >
             <div class="col-xs-12 col-sm-6 col-lg-3 head_title">
                 <h2 align="left">MyZone后台管理系统</h2>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3 col-xs-offset-3 head_title" style="text-align: right;">
-                <!--<button type="button" style="margin: 20px 50px; font-size: 20px;" th:text="${username}"></button>-->
-                <!--<a href="/adminLogin">-->
+                <button type="button" style="margin: 20px 50px; font-size: 20px;" th:text="${username}"></button>
+                <a th:href="@{/login}">
                 <button type="button" style="margin: 20px 50px">退出</button>
                 </a>
             </div>

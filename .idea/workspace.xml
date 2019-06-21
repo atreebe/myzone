@@ -1,50 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/NewsController.java" line="181" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/NewsController.java" line="183" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e4dee67-bf09-4b63-8fab-afc5022187c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/NewsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/summernote.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/image/news1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/image/news2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/image/news3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/image/news4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/image/news5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.11.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/summernote.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/commentinfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/newsadd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/newsinfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/userinfo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/common.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/front/newsadd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/useradd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myzone/adapter/AdminLoginAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/adapter/AdminLoginAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/NewsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myzone/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/entity/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myzone/entity/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/entity/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myzone/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myzone/repo/CommentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/repo/CommentRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myzone/repo/NewsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/repo/NewsRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myzone/repo/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myzone/repo/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/admintopnav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/admintopnav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/commentinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/commentinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/newsadd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/newsinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/newsinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/userinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/userinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/common.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/front/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/front/newsadd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/front/newsadd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/front/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/front/regist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/myzone/entity/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/myzone/entity/Comment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/myzone/entity/News.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/myzone/entity/News.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/myzone/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/myzone/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/myzone/repo/CommentRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/myzone/repo/CommentRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/myzone/repo/NewsRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/myzone/repo/NewsRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/myzone/repo/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/myzone/repo/UserRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/myzone/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/myzone/controller/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/myzone/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/myzone/controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/myzone/controller/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/myzone/controller/NewsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/myzone/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/myzone/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/admintopnav.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/admintopnav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/commentinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/commentinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/newsadd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/newsinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/newsinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/userinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/userinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/common.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/front/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/front/newsadd.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/front/newsadd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/front/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/front/regist.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/NewsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4558">
-              <caret line="35" column="66" lean-forward="true" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+            <state relative-caret-position="2220">
+              <caret line="237" selection-start-line="237" selection-end-line="237" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,21 +57,83 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/userinfo.html">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/front/newsadd.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="77" column="36" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+            <state relative-caret-position="95">
+              <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#2;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#3;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#5;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/IndexController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/front/regist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="297">
+              <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#4;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#5;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/useradd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="19" column="67" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/userinfo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="29" column="143" selection-start-line="29" selection-start-column="143" selection-end-line="29" selection-end-column="143" />
+              <folding>
+                <element signature="e#926#943#0" expanded="true" />
+                <element signature="e#1049#1075#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/commentinfo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/newsinfo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="28" column="143" selection-start-line="28" selection-start-column="143" selection-end-line="28" selection-end-column="143" />
+              <folding>
+                <element signature="e#958#984#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,13 +142,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/front/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="97" column="57" lean-forward="true" selection-start-line="97" selection-start-column="57" selection-end-line="97" selection-end-column="57" />
+            <state relative-caret-position="189">
+              <caret line="19" column="66" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="66" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#form#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -108,19 +161,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/newsinfo.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="56" column="79" lean-forward="true" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/commentinfo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
+            <state relative-caret-position="60">
+              <caret line="167" column="14" selection-start-line="167" selection-start-column="14" selection-end-line="167" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
+                <element signature="e#1181#1182#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,62 +177,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/CommentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+            <state relative-caret-position="-1116">
+              <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/newsadd.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="59" column="70" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/entity/News.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="100" column="33" lean-forward="true" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1267#1268#0" expanded="true" />
-                <element signature="e#1302#1303#0" expanded="true" />
-                <element signature="e#1355#1356#0" expanded="true" />
-                <element signature="e#1403#1404#0" expanded="true" />
-                <element signature="e#2087#2088#0" expanded="true" />
-                <element signature="e#2118#2119#0" expanded="true" />
-                <element signature="e#2163#2164#0" expanded="true" />
-                <element signature="e#2203#2204#0" expanded="true" />
-                <element signature="e#2497#2498#0" expanded="true" />
-                <element signature="e#2548#2549#0" expanded="true" />
-                <element signature="e#2594#2595#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/entity/Comment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#984#985#0" expanded="true" />
-                <element signature="e#1016#1017#0" expanded="true" />
-                <element signature="e#1063#1064#0" expanded="true" />
-                <element signature="e#1105#1106#0" expanded="true" />
-                <element signature="e#1847#1848#0" expanded="true" />
-                <element signature="e#1883#1884#0" expanded="true" />
-                <element signature="e#1941#1942#0" expanded="true" />
-                <element signature="e#1991#1992#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,28 +228,28 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/summernote.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/newsadd.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/repo/NewsRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/common.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/admintopnav.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/commentsinfo.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/adapter/AdminLoginAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/repo/CommentRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/front/regist.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/userinfo.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/repo/UserRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/NewsController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/front/newsadd.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/entity/Comment.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/commentinfo.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/entity/News.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/newsinfo.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/front/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/admintopnav.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/common.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/CommentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/front/newsadd.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/newsadd.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/myzone/controller/NewsController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/front/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/commentinfo.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/newsinfo.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/userinfo.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/front/regist.html" />
       </list>
     </option>
   </component>
@@ -263,9 +260,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="51" />
-    <option name="y" value="10" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-18" />
+    <option name="y" value="4" />
     <option name="width" value="1826" />
     <option name="height" value="976" />
   </component>
@@ -276,7 +273,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -316,7 +312,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="adapter" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myzone" type="b2602c69:ProjectViewProjectNode" />
@@ -324,7 +320,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myzone" type="b2602c69:ProjectViewProjectNode" />
@@ -363,6 +359,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myzone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myzone" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myzone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myzone" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -390,6 +402,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -402,7 +415,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561122273480" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561141164878" />
     <property name="last_opened_file_path" value="F:/Program Files/Git/cmd/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -475,7 +488,8 @@
       <workItem from="1561040545547" duration="2827000" />
       <workItem from="1561043428965" duration="911000" />
       <workItem from="1561044354188" duration="7630000" />
-      <workItem from="1561078531046" duration="15235000" />
+      <workItem from="1561078531046" duration="19133000" />
+      <workItem from="1561131819679" duration="9279000" />
     </task>
     <task id="LOCAL-00001" summary="注册登录模块">
       <created>1561028805042</created>
@@ -484,17 +498,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561028805042</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="基本功能">
+      <created>1561122388959</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561122388959</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80996000" />
+    <option name="totallyTimeSpent" value="94173000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="10" width="1826" height="976" extended-state="0" />
+    <frame x="-18" y="4" width="1826" height="976" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17553794" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17553794" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -504,7 +525,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4073634" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3361045" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -538,15 +559,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="基本功能" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/adminstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2966">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static.summernote/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static.summernote/base.css" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static.summernote/summernote.css" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/summernote.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -648,30 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/front/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="41" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#3;n#tbody#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/admintopnav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/adapter/AdminLoginAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
@@ -746,60 +734,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/front/regist.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/entity/News.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/front/newsadd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-872">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2970">
-          <caret line="36" column="74" lean-forward="true" selection-start-line="36" selection-start-column="74" selection-end-line="36" selection-end-column="74" />
+        <state relative-caret-position="1836">
+          <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="55" column="64" lean-forward="true" selection-start-line="55" selection-start-column="64" selection-end-line="55" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2497#2498#0" expanded="true" />
+            <element signature="e#2548#2549#0" expanded="true" />
+            <element signature="e#2594#2595#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/entity/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="1431">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#984#985#0" expanded="true" />
@@ -814,85 +765,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/userinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="77" column="36" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/entity/News.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/news_meeting_detail.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/admintopnav.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="100" column="33" lean-forward="true" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+        <state relative-caret-position="189">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="17" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1355#1356#0" expanded="true" />
-            <element signature="e#1403#1404#0" expanded="true" />
-            <element signature="e#2087#2088#0" expanded="true" />
-            <element signature="e#2118#2119#0" expanded="true" />
-            <element signature="e#2163#2164#0" expanded="true" />
-            <element signature="e#2203#2204#0" expanded="true" />
-            <element signature="e#2497#2498#0" expanded="true" />
-            <element signature="e#2548#2549#0" expanded="true" />
-            <element signature="e#2594#2595#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/commentinfo.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="85" column="32" lean-forward="true" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/newsinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="56" column="79" lean-forward="true" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/newsadd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="59" column="70" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/front/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="97" column="57" lean-forward="true" selection-start-line="97" selection-start-column="57" selection-end-line="97" selection-end-column="57" />
+        <state relative-caret-position="108">
+          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#form#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/CommentController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/front/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+        <state relative-caret-position="357">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#3;n#tbody#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/NewsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4558">
-          <caret line="35" column="66" lean-forward="true" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+        <state relative-caret-position="-387">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -901,10 +820,145 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="360">
+          <caret line="35" column="45" lean-forward="true" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1116">
+          <caret line="31" column="66" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2220">
+          <caret line="237" selection-start-line="237" selection-end-line="237" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/useradd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="19" column="67" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="167" column="14" selection-start-line="167" selection-start-column="14" selection-end-line="167" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/newsadd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1397">
+          <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#2;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#3;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#6;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/front/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="19" column="66" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#form#0;n#div#3;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#form#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#div#4;n#div#2;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/commentinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/newsinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="28" column="143" selection-start-line="28" selection-start-column="143" selection-end-line="28" selection-end-column="143" />
+          <folding>
+            <element signature="e#958#984#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/userinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="29" column="143" selection-start-line="29" selection-start-column="143" selection-end-line="29" selection-end-column="143" />
+          <folding>
+            <element signature="e#926#943#0" expanded="true" />
+            <element signature="e#1049#1075#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/front/newsadd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#2;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#3;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#5;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/front/regist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#2;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#4;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#5;n#tbody#0;n#table#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

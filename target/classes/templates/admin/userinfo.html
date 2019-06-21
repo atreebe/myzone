@@ -19,7 +19,20 @@
 <body>
 
 <!--Home Section-->
-<section id="home" class="home"></section>
+<section id="headsection" class="sections head_section">
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-xs-10 col-sm-8 col-md-5" style="padding:0">
+                <!--<h1 style="float:left;margin-left:-9999px">MyZone后台管理系统</h1>-->
+                <h2 style="text-align: center">MyZone后台管理系统</h2>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 home_button" >
+                <a th:href="@{/admin/adduser/}+${nowuser.userId}"><button class="btn btn-default btn-sm"  th:text="${username}">用户</button></a>
+                <a th:href="@{/index.html}"><button class="btn btn-default btn-sm" type="button" th:href>退出</button></a>
+            </div>
+        </div>
+    </div>
+</section>
 <!--End of Home section-->
 
 <section class="content_bg">

@@ -42,13 +42,15 @@ public class NewsController {
 
     //对消息进行添加
     @RequestMapping(value = "/addnews",method = RequestMethod.POST)
-    public String addnews(News news, Model model,MultipartFile[] picUp) throws FileNotFoundException {
+    public String addnews(News news, Model model,MultipartFile[] picUp,HttpSession session) throws FileNotFoundException {
         String resultStr = "动态添加成功！";
         String hrefStr = "/index.html";
         Date now = new Date();
 
         news.setNewsGood(0);
         news.setNewsTime(now);
+        User user = userRepo.findByUserName(session.getAttribute("username").toString());
+        news.setNewsAuthorId(user.getUserId());
         News newsinfo = newsRepo.save(news);
         if(newsinfo == null)
             resultStr = "动态添加出错";
@@ -173,7 +175,7 @@ public class NewsController {
     }
 
     @RequestMapping(value = "/admin/news",method = RequestMethod.GET)
-    public String findAdminNews(Model model) {
+    public String findAdminNews(Model model,HttpSession session) {
         List<News> news = newsRepo.findDescNews();
 
         int flag = 0;
@@ -181,6 +183,9 @@ public class NewsController {
         model.addAttribute("flag", flag);
         model.addAttribute("newscontent", newscontent);
         model.addAttribute("news", news);
+        User nowuser = userRepo.findByUserName(session.getAttribute("username").toString());
+        model.addAttribute("nowuser",nowuser);
+        model.addAttribute("username",session.getAttribute("username").toString());
         return "admin/newsinfo";
     }
     //查询动态内容题目
@@ -223,5 +228,24 @@ public class NewsController {
             return "/success";
         }
     }
+    //来到修改页面Edit
+    @RequestMapping(value = "/admin/addnews/{id}",method = RequestMethod.GET)
+    public String toEditPage(Model model,@PathVariable("id") Integer id){
+        News news = newsRepo.findByNewsId(id);
+        model.addAttribute("news",news);
+        return "admin/newsadd";
+    }
 
+    //对消息进行添加
+    @RequestMapping(value = "/addnews",method = RequestMethod.PUT)
+    public String editnews(News news, Model model,MultipartFile[] picUp,HttpSession session) throws FileNotFoundException {
+        String resultStr = "动态修改成功！";
+        String hrefStr = "/admin/news";
+        News newsinfo = newsRepo.save(news);
+        if(newsinfo == null)
+            resultStr = "动态修改出错";
+        model.addAttribute("result", resultStr);
+        model.addAttribute("hre", hrefStr);
+        return "/success";
+    }
 }

@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
 import java.math.BigInteger;
@@ -107,9 +108,12 @@ public class UserController {
     }
 
     @RequestMapping(value = "/admin/user",method = RequestMethod.GET)
-    public String findAdminUser(Model model) {
+    public String findAdminUser(Model model, HttpSession session) {
         List<User> user = userRepo.findDescUser();
         model.addAttribute("user", user);
+        User nowuser = userRepo.findByUserName(session.getAttribute("username").toString());
+        model.addAttribute("nowuser",nowuser);
+        model.addAttribute("username",session.getAttribute("username").toString());
         return "admin/userinfo";
     }
     //删除操作
@@ -161,5 +165,70 @@ public class UserController {
             return "/success";
         }
     }
+    //来到用户修改页面
+    @RequestMapping(value = "/admin/adduser/{id}")
+    public String toEditPage(@PathVariable("id") Integer id, Model model){
+        User user = userRepo.findByUserId(id);
+        model.addAttribute("user",user);
+        return "/front/regist";
+    }
+    @RequestMapping(value = "/userregist",method = RequestMethod.PUT)
+    public String updateUser(User user, Model model,MultipartFile picUp) throws Exception {
+        String resultStr = "用户信息修改成功！";
+        String hrefStr = "/admin/user";
+        if(user.getUserName().equals("") && user.getUserName().isEmpty()){
+            resultStr = "用户名称没有填写";
+            model.addAttribute("result", resultStr);
+            model.addAttribute("hre", hrefStr);
+            return "/success";
+        }
+        try{
+            MessageDigest md =MessageDigest.getInstance("MD5");
+            md.update(user.getUserPassword().getBytes());
+            user.setUserPassword(new BigInteger(1, md.digest()).toString(16));
+        }
+        catch (Exception e) {
+            throw new Exception("MD5加密出现错误，"+e.toString());
+        }
+        if (!picUp.isEmpty()) {
+            //获取当前时间
+            Date now = new Date();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+            String tablename = dateFormat.format(now);
+            //获取项目的绝对路径
+            String path = ClassUtils.getDefaultClassLoader().getResource("").getPath();
+            //提取项目文件路径
+            String srcpath = "";
+            for (int i = 0; i < path.length(); i++) {
+                if (path.charAt(i) == '/' && path.charAt(i + 1) == 't' && path.charAt(i + 2) == 'a' && path.charAt(i + 3) == 'r' && path.charAt(i + 4) == 'g') {
+                    break;
+                } else {
+                    srcpath += path.charAt(i);
+                }
+            }
+            //文件存入位置
+            srcpath = srcpath + "/src/main/resources/static/file/image/user/";
+            //获取随机图片名字
+            String picfileName = picUp.getOriginalFilename();
+            //获取图片后缀名
+            String picsuffixName = picfileName.substring(picfileName.lastIndexOf("."));
 
+            //获得文件类型（可以判断如果不是图片，禁止上传）
+            String contentType = picUp.getContentType();
+            try {
+                //将图片文件存入项目文件中
+                picUp.transferTo(new File(srcpath + "user" + tablename + picsuffixName));
+                String dbpicname = "file/image/user/user" + tablename + picsuffixName;
+                user.setUserPic(dbpicname);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        User userinfo = userRepo.save(user);
+        if(userinfo == null)
+            resultStr = "用户信息修改出错";
+        model.addAttribute("result", resultStr);
+        model.addAttribute("hre", hrefStr);
+        return "/success";
+    }
 }
