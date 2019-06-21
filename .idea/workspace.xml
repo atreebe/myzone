@@ -81,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="56" column="41" lean-forward="true" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -402,7 +402,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561122249488" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561122273480" />
     <property name="last_opened_file_path" value="F:/Program Files/Git/cmd/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -475,7 +475,7 @@
       <workItem from="1561040545547" duration="2827000" />
       <workItem from="1561043428965" duration="911000" />
       <workItem from="1561044354188" duration="7630000" />
-      <workItem from="1561078531046" duration="14933000" />
+      <workItem from="1561078531046" duration="15235000" />
     </task>
     <task id="LOCAL-00001" summary="注册登录模块">
       <created>1561028805042</created>
@@ -488,13 +488,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80694000" />
+    <option name="totallyTimeSpent" value="80996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="10" width="1826" height="976" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17553794" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17553794" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -504,7 +504,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4073634" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4073634" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -534,7 +534,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="注册登录模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册登录模块" />
+    <MESSAGE value="基本功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="基本功能" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/adminstyle.css">
@@ -901,7 +902,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myzone/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="56" column="41" lean-forward="true" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
